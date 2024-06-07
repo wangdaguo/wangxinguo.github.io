@@ -2,6 +2,7 @@
 
 source "https://rubygems.org"
 
+gem 'jekyll-compose', group: [:jekyll_plugins]
 gemspec
 
 group :test do
