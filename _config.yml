@@ -31,7 +31,7 @@ url: 'https://qiu01shi.github.io'
 
 github:
   username: qiu01shi             # change to your github username
-
+  repository_url: https://raw.githubusercontent.com/qiu01shi/qiu01shi.github.io/gh-pages-v0
 twitter:
   username: twitter_username            # change to your twitter username
 
