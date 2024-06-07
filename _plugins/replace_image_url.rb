@@ -3,7 +3,7 @@ module Jekyll
     def replace_image_url(input)
       site = @context.registers[:site]
       baseurl = site.config['github']['repository_url']
-      input.gsub("/posts/media", "#{baseurl}/media")
+      input.gsub("../media", "#{baseurl}/media")
     end
   end
 end
