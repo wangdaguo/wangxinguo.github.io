@@ -200,7 +200,3 @@ jekyll-archives:
     category: /categories/:name/
 
 encoding: "utf-8"
-
-include:
-  - assets/css/styles.css
-  - assets/js/script.js
