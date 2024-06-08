@@ -204,9 +204,3 @@ encoding: "utf-8"
 include:
   - assets/css/styles.css
   - assets/js/script.js
-
-markdown: kramdown
-highlighter: rouge
-
-plugins:
-  - jekyll-feed
