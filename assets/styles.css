@@ -1,55 +1,57 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-    flex-direction: column;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  flex-direction: column;
 }
 
 .carousel {
-    width: 80%;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Ensure only one image is visible at a time */
+  width: 100%;
+  max-width: 800px; /* 限制最大宽度 */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure only one image is visible at a time */
 }
 
 .carousel-container {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 100%; /* Ensure the container takes the full width */
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
 }
 
 .carousel-image {
-    width: 100%;
-    flex-shrink: 0; /* Prevent the images from shrinking */
+  width: 100%;
+  flex-shrink: 0;
+  max-height: 400px; /* 根据需要设置最大高度 */
+  object-fit: cover; /* 确保图片按比例缩放 */
 }
 
 .carousel-controls {
-    display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    align-items: center;
-    width: 100%;
-    background-color: black;
-    height: 0.8cm;
-    box-sizing: border-box;
-    padding: 0 10px;
-    gap: 10px; /* Add spacing between buttons */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  height: 0.8cm;
+  box-sizing: border-box;
+  padding: 0 10px;
+  gap: 10px;
 }
 
 button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .carousel-indicator {
-    color: white;
-    font-size: 16px;
+  color: white;
+  font-size: 16px;
 }
