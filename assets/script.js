@@ -25,7 +25,7 @@ function showSlide(index) {
     carouselContainer.offsetHeight;
 
     // Restore transition effect
-    carouselContainer.style.transition = 'transform 0.5s ease';
+    carouselContainer.style.transition = 'transform 0s ease';
 
     document.getElementById('current-slide').innerText = currentIndex + 1;
 }

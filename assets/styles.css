@@ -15,7 +15,7 @@ body {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* 确保只显示一张图片 */
+  overflow: hidden; /* Ensure only one image is visible at a time */
 }
 
 .carousel-container {
@@ -26,9 +26,9 @@ body {
 
 .carousel-image {
   width: 100%;
-  max-height: 400px; /* 设置最大高度，根据需要调整 */
-  object-fit: cover; /* 确保图片按比例缩放 */
   flex-shrink: 0;
+  max-height: 400px; /* 根据需要设置最大高度 */
+  object-fit: cover; /* 确保图片按比例缩放 */
 }
 
 .carousel-controls {
