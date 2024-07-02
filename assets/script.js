@@ -6,7 +6,7 @@ document.getElementById('total-slides').innerText = totalSlides;
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-image');
     const carouselContainer = document.querySelector('.carousel-container');
-    
+
     // Remove transition effect
     carouselContainer.style.transition = 'none';
 
@@ -22,10 +22,10 @@ function showSlide(index) {
     carouselContainer.style.transform = `translateX(${offset}%)`;
 
     // Force reflow to reset transition effect
-    carouselContainer.offsetHeight; 
+    carouselContainer.offsetHeight;
 
     // Restore transition effect
-    carouselContainer.style.transition = 'transform 0s ease';
+    carouselContainer.style.transition = 'transform 0.5s ease';
 
     document.getElementById('current-slide').innerText = currentIndex + 1;
 }
